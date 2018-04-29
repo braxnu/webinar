@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "test:watch": "watch \"npm test\" src test"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "ava": "^0.25.0"
+    "ava": "^0.25.0",
+    "watch": "^1.0.2"
   }
 }

@@ -102,7 +102,7 @@ class Todo extends React.Component {
       return
     }
 
-    if (newItem.length === 0) {
+    if (!newItem) {
       return
     }
 
@@ -128,7 +128,8 @@ class Todo extends React.Component {
           onChange={ ev => this.update(ev.target.value) }
           type="text" />
 
-        <button onClick={ () => this.add(this.state.newItem) }>Add</button>
+        <button
+          onClick={ () => this.add(this.state.newItem) }>Add</button>
 
         <button onClick={ () => this.clear() }>Clear</button>
 
@@ -144,7 +145,9 @@ class Todo extends React.Component {
 }
 
 ReactDOM.render(
-  <Todo />,
+  <div>
+    <List />
+  </div>,
   document.getElementById('root')
 );
 

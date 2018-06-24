@@ -1,17 +1,15 @@
 {
-  "name": "session-9-http",
+  "name": "session-10-promises",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "callback.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
-  },
-  "devDependencies": {
-    "nodemon": "^1.17.5"
+    "node-fetch": "^2.1.2",
+    "request": "^2.87.0"
   }
 }

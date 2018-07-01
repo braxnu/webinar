@@ -1,3 +1,6 @@
 
 session-9-http/package-lock.json
 session-10-promises/package-lock.json
+session-11-client-server-app/chat-server/node_modules/
+session-11-client-server-app/chat/node_modules/
+session-11-client-server-app/chat-server/package-lock.json

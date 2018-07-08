@@ -1,0 +1,20 @@
+{
+  "name": "Reksio",
+  "version": "1.0",
+  "description": "Nowy dom dla Reksia",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*",
+        "http://*/*"
+      ],
+      "css": [
+        "page.css"
+      ],
+      "js": [
+        "block.js"
+      ]
+    }
+  ]
+}

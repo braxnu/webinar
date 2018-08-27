@@ -1,0 +1,17 @@
+{
+  "name": "session-17-mocha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "func.js",
+  "scripts": {
+    "test": "mocha",
+    "coverage": "nyc --reporter text npm test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2"
+  }
+}

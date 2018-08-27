@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <input type="text" id="url" />
+  <button id="open-window">Open window</button>
+
+  <script type="text/javascript">
+    const openWinButton = document.querySelector('#open-window')
+    const URLInput = document.querySelector('#url')
+
+    const { BrowserWindow } = require('electron').remote
+
+    openWinButton.addEventListener('click', function() {
+      const win = new BrowserWindow({
+        width: 800,
+        height: 600
+      })
+
+      win.loadURL(URLInput.value)
+    })
+  </script>
+
+  <textarea id="editor" cols="90" rows="30"></textarea>
+
+  <script type="text/javascript">
+    const editor = document.querySelector('#editor')
+    const { ipcRenderer } = require('electron')
+
+    ipcRenderer.send('ready')
+
+    ipcRenderer.on('file', (ev, text) => {
+      editor.value = text
+    })
+  </script>
+</body>
+</html>

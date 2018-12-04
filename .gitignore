@@ -1,12 +1,4 @@
+**/node_modules/
+**/package-lock.json
 
-session-9-http/package-lock.json
-session-10-promises/package-lock.json
-session-11-client-server-app/chat-server/node_modules/
-session-11-client-server-app/chat/node_modules/
-session-11-client-server-app/chat-server/package-lock.json
-session-12-commandline-tool/node_modules/
-
-/session-15-e2e/node_modules/
-/session-16-electron/node_modules/
-/session-17-mocha/node_modules/
 /session-17-mocha/.nyc_output/

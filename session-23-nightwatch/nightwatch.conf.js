@@ -3,7 +3,7 @@ module.exports = {
   "output_folder" : "reports",
   "custom_commands_path" : "",
   "custom_assertions_path" : "",
-  "page_objects_path" : "",
+  "page_objects_path" : "tests/pageobjects",
   "globals_path" : "",
 
   "selenium" : {

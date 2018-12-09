@@ -29,5 +29,15 @@ module.exports = {
     });
 
     browser.end();
+  },
+
+  'kupowanie': function(browser) {
+    const page = browser.page['od-natury-produkt']();
+
+    page.navigate();
+    page.click('@buyButton');
+    page.assert.visible('@buyConfirmation');
+
+    browser.end();
   }
 };

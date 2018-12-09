@@ -11,5 +11,23 @@ module.exports = {
 
     browser
       .end();
+  },
+
+  'szukanie': function(browser) {
+    browser
+      .url('https://od-natury.pl/');
+
+    browser.resizeWindow(1200, 800);
+
+    browser
+      .setValue('.search-box input.search-box-text', 'witamina c');
+
+    browser.keys(browser.Keys.ENTER);
+
+    browser.elements('css selector', '.product-item', function(result) {
+      browser.assert.equal(result.value.length > 10, true);
+    });
+
+    browser.end();
   }
 };
